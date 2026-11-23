@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoho Deals Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <h1>Deal Management Dashboard</h1>
+
+        <div class="summary-container">
+
+            <div class="summary-card">
+                <h3>Total Deals</h3>
+                <p id="total-deals">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Open Deals</h3>
+                <p id="open-deals">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Closed Won</h3>
+                <p id="closed-won">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Closed Lost</h3>
+                <p id="closed-lost">0</p>
+            </div>
+
+        </div>
+
+        <div class="search-container">
+
+            <input type="text" id="deal-search"
+                   placeholder="Search deals by name...">
+
+            <select id="stage-filter">
+                <option value="">All Stages</option>
+                <option value="Qualification">Qualification</option>
+                <option value="Negotiation">Negotiation</option>
+                <option value="Closed Won">Closed Won</option>
+                <option value="Closed Lost">Closed Lost</option>
+            </select>
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Deal Name</th>
+                        <th>Amount</th>
+                        <th>Stage</th>
+                        <th>Closing Date</th>
+                    </tr>
+                </thead>
+
+                <tbody id="deal-table-body">
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
